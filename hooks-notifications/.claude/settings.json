@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run C:\\Users\\nirgl\\Desktop\\Projects\\ClaudeCode\\hooks-notifications\\play_sound.py"
+          }
+        ]
+      }
+    ]
+  }
+}
