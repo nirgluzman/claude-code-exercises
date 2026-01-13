@@ -19,3 +19,10 @@ Each subagent runs in its own context window with a custom system prompt, specif
 5) **Select model**
 
 6) **Choose a color** (background color for the subagent)
+
+## Context Flow
+When a subagent is invoked, it operates in its own context window. <br />
+This means, that its token consumption is excluded from the main thread's total quota. <br />
+A compact summary is integrated back into the main thread upon task completion, ensuring that the primary context window is spared from unnecessary token bloat.
+
+![](./assets/context-flow.png)
