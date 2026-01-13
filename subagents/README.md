@@ -1,0 +1,21 @@
+# [Subagents](https://code.claude.com/docs/en/sub-agents)
+
+These are specialized AI assistants that handle specific types of tasks. <br />
+Each subagent runs in its own context window with a custom system prompt, specific tool access, and independent permissions. When Claude encounters a task that matches a subagent’s description, it delegates to that subagent, which works independently and returns results.
+
+## Quickstart - create our own subagent
+
+1) Subagents are defined in Markdown files with YAML frontmatter. <br />
+   We can create them manually or use the `/agents` slash command.
+
+2) Select **Create new agent**, then choose either *User-level* or *Project-level*.
+
+3) Select **Generate with Claude** (recommended). <br />
+   We can use *Claude* or *Gemini* for example, to enhance the prompt. <br />
+   It is important to include an *Activation Trigger* section.
+
+4) **Select tools**
+
+5) **Select model**
+
+6) **Choose a color** (background color for the subagent)
