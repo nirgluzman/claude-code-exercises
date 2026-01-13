@@ -18,3 +18,16 @@ The `/output-style:new` command and the broader "output styles" feature in Claud
 - `/output-style [style]` to directly switch to a style.
 
 You can also create your own custom output styles by defining a new system prompt that tailors the AI's behavior to your specific needs.
+
+# [Status Line](https://code.claude.com/docs/en/statusline)
+
+Create a custom status line for Claude Code to display contextual information.
+
+## Create a custom Status Line
+
+Run `/statusline` to ask Claude Code to help you set up a custom status line.
+
+Example:
+```bash
+/statusline show the model name in orange
+```
