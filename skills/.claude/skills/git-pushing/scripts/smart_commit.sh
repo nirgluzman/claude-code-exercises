@@ -2,6 +2,11 @@
 # Smart Git Commit Script for git-pushing skill
 # Handles staging, commit message generation, and pushing
 
+#
+# Source:
+# https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/git-pushing
+#
+
 set -e  # Exit on error
 
 # Colors for output
