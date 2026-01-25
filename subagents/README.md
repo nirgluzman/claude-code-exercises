@@ -26,3 +26,10 @@ This means, that its token consumption is excluded from the main thread's total 
 A compact summary is integrated back into the main thread upon task completion, ensuring that the primary context window is spared from unnecessary token bloat.
 
 ![](./assets/context-flow.png)
+
+## Examples:
+
+- **UX/UI Reviewer**
+```script
+Expert UX&UI engineer who reviews the UX&UI of React components in a browser using Playwright, takes screenshots, then offers feedback on how to improve the component in terms of visual design, user experience and accessibility.
+```
