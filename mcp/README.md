@@ -2,6 +2,11 @@
 
 MCP (Model Context Protocol) is an open standard that allows AI systems to connect with external tools and data sources.
 
+## [PulseMCP](https://www.pulsemcp.com/)
+
+Community-driven hub and ecosystem tracker for the MCP.
+
+
 ## [Context7](https://context7.com/) - Up-to-date Docs
 
 Documentation service that provides up-to-date, version-specific code examples and documentation directly to LLMs and AI coding tools (like Cursor, VS Code, Claude).
