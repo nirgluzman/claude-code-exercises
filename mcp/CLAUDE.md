@@ -2,4 +2,6 @@
 
 ## Preferences
 
-- **Expo Documentation**: Always use the Context7 MCP (`mcp__context7__resolve-library-id` and `mcp__context7__query-docs`) when answering questions about Expo to get the latest documentation and information.
+- **Docs & Research:**: Use Context7 to fetch the latest documentation for implementing new libraries, frameworks, or adding features.
+
+- **Expo Documentation**: Always use the Context7 when answering questions about Expo to get the latest documentation and information.
