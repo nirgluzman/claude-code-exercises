@@ -3,8 +3,9 @@
 This repository contains best practices and code examples for using Claude Code.<br/>
 The examples cover various programming tasks and demonstrate how to effectively leverage Claude Code for coding assistance.
 
-https://github.com/nirgluzman/claude-code-exercises.git <br />
-https://github.com/emarco177/claude-code-crash-course
+https://github.com/nirgluzman/claude-code-exercises.git <br/>
+https://github.com/emarco177/claude-code-crash-course <br/>
+https://github.com/academind/claude-code-course-resources
 
 ### Resources:
 [Anthropic - Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action)
