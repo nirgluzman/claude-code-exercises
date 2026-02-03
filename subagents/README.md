@@ -14,7 +14,7 @@ Each subagent runs in its own context window with a custom system prompt, specif
    We can use *Claude* or *Gemini* for example, to enhance the prompt. <br />
    It is important to include an *Activation Trigger* section.
 
-4) **Select tools**
+4) [**Select tools**](https://code.claude.com/docs/en/settings#tools-available-to-claude)
 
 5) **Select model**
 
