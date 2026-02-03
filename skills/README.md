@@ -1,8 +1,6 @@
 # [Agent Skills](https://code.claude.com/docs/en/skills) - Extend Claude’s capabilities
 
 https://agentskills.io/home <br />
-[Anthropic's Skills repository](https://github.com/anthropics/skills) <br />
-[Claude Skills Marketplace](https://github.com/mhattingpete/claude-skills-marketplace/tree/main) <br />
 [Skills announcement](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
 
 ***Instructions that extend Claude's knowledge.*** <br />
@@ -16,6 +14,14 @@ I.e., Skills are designed for **maximum context efficiency**:
 - **Initial Load**: On session start, only the high-level summary (description section) is loaded.
 - **Deferred Loading**: The agent dynamically pulls the complete instruction set only if it identifies the skill as necessary for the current task.
 - **Benefit**: We avoid "context bloat" by ignoring irrelevant skill details until they are needed.
+
+## Third-Party Skills
+
+[Claude Skills Marketplace](https://github.com/mhattingpete/claude-skills-marketplace/tree/main) <br />
+[Anthropic - Public Inventory for Skills](https://github.com/anthropics/skills) <br />
+[Vercel - Open Agent Skills Ecosystem](https://skills.sh/) <br />
+[GitHub - sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
+
 
 ## Installing Skills from the Marketplace
 
@@ -31,7 +37,7 @@ Here are the steps for installation:
 
 2) Browse and install skills
 
-```bash
+```
 /plugin
 ```
 
@@ -42,24 +48,35 @@ Here are the steps for installation:
 3) (Optional) Add additional files or folders as needed for your skill.
 4) Skills are automatically loaded when created or modified. <br />Verify the Skill appears in the list with: `What Skills are available?`
 
-## Skill Structure
-A Skill is a folder containing a `SKILL.md` file with instructions for Claude. Additional files can be included as needed.
+## Skill Folder Structure
+A Skill is a folder containing a `SKILL.md` file with instructions for Claude. <br />
+Additional folders/files can be included as needed.
+
 ```
 ~/.claude/skills/
-  └── my_skill/
-      ├── SKILL.md
-      ├── helper_script.py
-      └── data/
-          └── reference_data.csv
+  └── your-skill-name/
+      ├── SKILL.md            # Required: main instructions
+      ├── extra .md documents # Optional: additional documentation for the skill
+      ├── scripts/            # Optional: Executable code to automate tasks (Python, Bash, Node, etc.)
+      ├── references/         # Optional: Documents, markdown files, or notes used as context
+      └── assets/             # Optional: Templates, images, diagrams
 ```
 
-### SKILL.md
-`SKILL.md` file contains the main instructions for the Skill. It should include:
+## SKILL.md
+
+SKILL.md file contains the main instructions for the Skill. It should include:
 - A clear and brief description of the Skill's purpose.
 - Step-by-step instructions for Claude to follow.
 - Any relevant examples or best practices.
 
+### Notes:
+- `disable-model-invocation: true` - Prevents Claude from invoking this Skill., i.e. if we want to use the Skill as a **custom command** only.
+- `user-invocable: false` - Automatic discoverability, NO user invocation with custom slash command.
+- `allowed-tools` - List of [tools](https://code.claude.com/docs/en/settings#tools-available-to-claude) that are allowed to be used by the Skill.
+- `$ARGUMENTS` - placeholder for argument(s) passed to the Skill.
+
 ### Additional Files
+
 Additional files can be included to support the Skill's functionality, such as scripts, data files, or configuration files.
 
 ## [When to use Skills versus other options](https://code.claude.com/docs/en/skills#when-to-use-skills-versus-other-options )
